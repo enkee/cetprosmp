@@ -1,0 +1,57 @@
+/*---------MEDIDAS PARA TABLES EN VERTICAL (SM)----------*/
+@media screen and (min-width:576px) {
+
+    /*------------------- Encabezado ----------------*/
+    header #logo {}
+
+
+
+
+    /*-------------------- Main ----------------------*/
+
+    #main article {
+        padding: 0.3rem;
+    }
+
+    #main section .horario p {
+        margin: 0.5576rem;
+    }
+
+    #main section .thumb {
+        padding: 0.5rem;
+    }
+
+    #main section .contenido {
+        padding: 0.5rem;
+    }
+
+    /*-------------------- Comentarios ---------------------*/
+    #comentarios {
+        padding: 1rem;
+    }
+
+    #comentarios #caja_comentarios .commentlist>li ul li {
+        padding-left: 20px;
+    }
+
+    /*-------------------- ASIDE---------------------------*/
+
+    /*-------------------- FOOTER ---------------------------*/
+    footer {
+        padding: 1.6rem;
+        padding-bottom: 0.5rem;
+    }
+
+    footer #widgets {
+        display: flex;
+    }
+
+    .wp-block-group__inner-container>figure {
+        width: 100%;
+        //max-width: 450px;
+        height: auto;
+        margin: auto;
+    }
+
+
+}

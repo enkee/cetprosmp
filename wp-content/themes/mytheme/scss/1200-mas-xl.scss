@@ -1,0 +1,49 @@
+/*-----------MEDIDAS PARA (ESCRITORIO GRANDE) XL-------------*/
+@media screen and (min-width:1200px) {
+    header #logo {}
+
+    //--------------- header--------------------
+
+
+    //------------- Main --------------------------
+    #main {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        //background: violet;
+        justify-content: center !important;
+    }
+
+    #main>section {
+        width: 850px !important;
+        //background-color: chocolate;
+        margin: 0 !important;
+
+    }
+
+
+    //------------sidebar-----------------
+
+    aside {
+        width: 250px;
+        background: black;
+    }
+
+    aside #widgets {
+        flex-wrap: wrap;
+    }
+
+    aside .widget {
+        margin: 0;
+        padding: 1rem 0.5rem !important;
+    }
+
+
+
+    //---------------- Footer-------------
+
+
+
+
+
+}

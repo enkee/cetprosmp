@@ -1,0 +1,69 @@
+/*---------MEDIDAS PARA TABLES EN VERTICAL (SM)----------*/
+@media screen and (min-width:576px) {
+
+    /*------------------- Encabezado ----------------*/
+    header #logo img {
+        background: YELLOW;
+    }
+
+    header .container {
+        padding: .5rem .7rem;
+
+    }
+
+    /*-------------------- Main ----------------------*/
+
+    #main article {
+        padding: 1rem;
+        margin-top: 5px;
+    }
+
+    /*-------------------- Comentarios ---------------------*/
+    #comentarios {
+        padding: 1rem;
+    }
+
+    #comentarios #caja_comentarios .commentlist > li ul li {
+        padding-left: 20px;
+    }
+
+    /*-------------------- ASIDE---------------------------*/
+
+    /*-------------------- FOOTER ---------------------------*/
+
+
+}
+
+/*---------MEDIDAS PARA TABLES EN HORIZONTAL (MD) ----------*/
+@media screen and (min-width:768px) {
+
+    header #logo img {
+        background: GREEN;
+    }
+
+}
+
+/*================= MEDIDAS PARA (ESCRITORIO) LG ================*/
+@media screen and (min-width:992px) {
+
+
+
+    header #logo img {
+        background: purple;
+    }
+
+
+
+
+}
+
+
+/*-----------MEDIDAS PARA (ESCRITORIO GRANDE) XL-------------*/
+@media screen and (min-width:1200px) {
+    header #logo img {
+        background: pink;
+    }
+
+
+
+}

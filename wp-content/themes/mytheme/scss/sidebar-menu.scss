@@ -1,0 +1,133 @@
+/* Sliding swipe menu CSS */
+nav {
+  height: 100%;
+  width: 280px;
+  background-color: #340474;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: visible;
+  transform: translate(-480px, 0);
+}
+
+.ssm-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+}
+
+// previene desplazamiento de la pagina cuando menu abierto
+.is-navOpen {
+  overflow: hidden;
+}
+
+
+// ------------ menu izquierda----------------
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #222d32;
+  background: transparent;
+}
+
+.sidebar-menu>li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu>li>a {
+  padding: 12px 5px 12px 5px;
+  display: block;
+  border-left: 3px solid transparent;
+  color: #b8c7ce !important;
+}
+
+
+.sidebar-menu>li>a>.fas {
+  width: 24px;
+}
+
+.sidebar-menu>li:hover>a,
+.sidebar-menu>li.current-menu-item>a {
+  color: #fff;
+  background: #1e282c;
+  border-left-color: #3c8dbc;
+}
+
+.sidebar-menu>li .label,
+.sidebar-menu>li .badge {
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.sidebar-menu li.sidebar-header {
+  padding: 10px 25px 10px 15px;
+  font-size: 12px;
+  color: #4b646f;
+  background: #1a2226;
+}
+
+.sidebar-menu li>a>.fa-angle-left {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 3px;
+  float: right;
+}
+
+.sidebar-menu li.current-menu-item>a>.fa-angle-left {
+  transform: rotate(-90deg);
+}
+
+.sidebar-menu li.current-menu-item>.sub-menu {
+  display: block;
+}
+
+.sidebar-menu a {
+  color: #b8c7ce;
+  text-decoration: none;
+}
+
+.sidebar-menu .sub-menu {
+  display: none;
+  list-style: none;
+  padding-left: 5px;
+  margin: 0 1px;
+  background: #2c3b41;
+}
+
+.sidebar-menu .sub-menu .sub-menu {
+  padding-left: 20px;
+}
+
+.sidebar-menu .sub-menu>li>a {
+  padding: 5px 5px 5px 12px;
+  display: block;
+  font-size: 14px;
+  color: #8aa4af;
+}
+
+.sidebar-menu .sub-menu>li>a>.fas {
+  width: 20px;
+}
+
+.sidebar-menu .sub-menu>li>a>.fa-angle-left,
+.sidebar-menu .sub-menu>li>a>.fa-angle-down {
+  width: auto;
+}
+
+.sidebar-menu .sub-menu>li.current-menu-item>a,
+.sidebar-menu .sub-menu>li>a:hover {
+  color: #fff;
+}

@@ -1,0 +1,355 @@
+/*================= MEDIDAS PARA (ESCRITORIO) LG ================*/
+@media screen and (min-width:992px) {
+
+    //------------ Chrome Android ---------------
+    #no-slide {
+        @supports (-webkit-appearance:none) {
+            .os-android & {
+                min-height: calc(100vh - 56px - #{$altoNavBar2});
+            }
+        }
+    }
+
+    //-----------------------------------
+    body {
+    
+        padding-top: $altoNavBar2;
+    }
+
+    //------------- HEADER -------------------
+    header {
+        height: auto;
+        display: flex !important;
+        justify-content: center;
+        //overflow: visible;
+    }
+
+    header .containera {
+        align-content: space-between;
+        flex-wrap: nowrap;
+        max-width: 1199px;
+        margin: 0 0.3rem;
+        overflow: visible;
+        height: auto;
+    }
+
+    header .containera #logo {
+        min-width: 220px;
+        height: 68px;
+        flex: 0 1 auto !important;
+    }
+
+    header .containera #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*----------------- PERFIL ---------------*/
+    #general {
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: flex-start;
+        flex: 1 1 auto !important;
+        height: auto;
+    }
+
+    #general #perfil {
+        display: flex;
+        flex: 0 1 auto;
+        position: relative;
+        //overflow: visible;
+    }
+
+    #general #perfil>a {
+        display: flex;
+    }
+
+    #general #perfil>a img {
+        width: 35px;
+        height: 35px;
+        display: block;
+        order: 2;
+    }
+
+    #general #perfil>a .infouser {
+        display: block;
+        order: 1;
+        color: white;
+        font-size: 0.8rem;
+        padding-right: 4px;
+        line-height: 1.4em;
+    }
+
+    #general #perfil>a .infouser span:nth-child(3) {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    #general #perfil .sub-menu {
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: 6px;
+        //left: 20px;
+    }
+
+    #general #perfil .sub-menu li a {
+        width: 120px;
+        padding-right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    //------------- ENCUENTRANOS ------------------
+
+    #general #encuentranos {
+        width: 170px;
+        flex: 0 1 auto;
+        justify-content: space-between;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #general #encuentranos img {
+        height: auto;
+        width: 22px;
+    }
+
+    #general #encuentranos p {
+        display: block;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    //----------------- MENU TOP ------------------
+
+    #general #menu-top {
+        order: 11;
+        justify-content: flex-start;
+        width: 100%;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #general #menu-top>li {
+        display: flex;
+        height: 30px;
+    }
+
+    #general #menu-top>li>a {
+        display: flex;
+        background: transparent;
+        margin: 8px;
+        color: rgb(206, 0, 0);
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    #general #menu-top>li>a:hover {
+        font-weight: bold;
+        color: rgb(255, 2, 2);
+        cursor: pointer !important;
+    }
+
+    #general #menu-top>li>a>i:first-child {
+        font-size: 16px;
+        width: auto;
+        height: auto;
+        margin-right: 4px;
+    }
+
+    #general #menu-top>li>a>span {
+        display: flex;
+        margin-right: 4px;
+    }
+
+    #general #menu-top>li>a>i.fa-angle-left {
+        font-size: 14px;
+        float: left;
+        width: auto;
+        height: auto;
+    }
+
+    //-------------- Sub-Menu ---------------------
+    #general {
+        position: relative;
+        //overflow: visible;
+    }
+
+    #general .sub-menu {
+        position: absolute;
+        background-color: rgba(0,
+                0,
+                0,
+                0.9);
+        border: gray 1px solid;
+        margin-top: 30px;
+        margin-left: 8px;
+        padding-bottom: 8px;
+        display: none;
+        z-index: 20;
+
+    }
+
+    #general .sub-menu li {
+        list-style: none;
+        position: relative;
+        height: 30px;
+    }
+
+    #general #menu-top .sub-menu li:before {
+        content: "\25b6";
+        font-size: 0.8rem;
+        color: Red;
+        position: absolute;
+        left: 0.1rem; // distancia de la vinieta
+        top: 7px;
+        //--size: 32px;
+        //width: var(--size);
+        //height: var(--size);
+        //left: calc(-1 * var(--size) + 12px); 
+        //top: 0;
+    }
+
+    #general .sub-menu li a {
+        display: flex;
+        //align-items: center;
+        align-content: center;
+        width: 220px;
+        height: 30px;
+        line-height: 1.2em;
+        color: white !important;
+        text-decoration: none;
+        padding-left: 1rem;
+        padding-right: 0.3rem;
+    }
+
+    #general .sub-menu li a:hover {
+        background: blue;
+        color: white !important;
+    }
+
+    #general .sub-menu li i {
+        display: none;
+    }
+
+    //------------Boton y Bloque de busqueda --------
+
+    #general .boton-buscar {
+        display: none;
+        flex: 0 1 auto;
+    }
+
+    #bloque-buscar {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 245px;
+        z-index: 30;
+    }
+
+    #bloque-buscar form {
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+
+    #bloque-buscar input[type="search"] {
+        border: 0;
+        border-radius: 5px;
+        flex: 1 1 auto;
+        padding: 0 0.9rem;
+        height: 25px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-size: 0.85rem !important;
+    }
+
+    #bloque-buscar input[type="submit"] {
+        color: transparent;
+        background: url("http://localhost/cetprosmp/wp-content/uploads/2020/04/search.png") transparent;
+        background-size: 20px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center center;
+        width: 25px;
+        height: 25px;
+
+    }
+
+
+    /*-----------------MAIN----------------*/
+    #main {
+        width: 992px;
+        margin: auto;
+    }
+
+    #main section {
+        width: 100%;
+    }
+
+    #main article {
+        padding: 1.5rem;
+        padding-top: 0;
+    }
+
+    #main section .thumb {
+        padding: 0.8rem;
+    }
+
+    #main section .contenido {
+        padding: 0.8rem;
+    }
+
+
+    /*--------------SLIDE SHOW ---------------*/
+
+    #no-slide {
+
+        height: calc(100vh - #{$altoNavBar2});
+        width: 100%;
+
+    }
+
+    #slideshow {
+        margin: 0;
+    }
+
+    #slideshow .slide .thumb img {
+        height: calc(100vh - #{$altoNavBar2});
+    }
+
+    /*-----------------ASIDE------------------*/
+    aside #widgets .widget,
+    footer #widgets .widget {
+        //flex: 1 1 30%;
+        margin-bottom: 1rem;
+        //display: none;
+        padding: 0.5rem 2rem;
+    }
+
+    /*-----------------FOOTER----------------*/
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        padding-bottom: 0;
+    }
+
+    footer .contenpie {
+        max-width: 1200px;
+        padding: 0.5rem;
+    }
+
+    footer .contenpie #copyright {
+        padding-top: 0.2rem;
+    }
+
+    //------------- sidebar -----------------
+
+    aside #widgets {
+        max-width: 1200px;
+    }
+
+}
